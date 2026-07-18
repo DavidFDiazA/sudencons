@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de proyectos de SUDECONS — Ingeniería Civil y Servicios Industriales en Colombia." />
+  <title>Portafolio — SUDECONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="proyectos">
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar" class="navbar navbar--solid">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="SUDECONS" class="site-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"      class="nav-link"       data-nav="home">Inicio</a></li>
+        <li><a href="nosotros.html"   class="nav-link"       data-nav="nosotros">Nosotros</a></li>
+        <li><a href="servicios.html"  class="nav-link"       data-nav="servicios">Servicios</a></li>
+        <li><a href="proyectos.html"  class="nav-link active" data-nav="proyectos">Portafolio</a></li>
+        <li><a href="contacto.html"   class="nav-link nav-cta" data-nav="contacto">Contáctenos</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="index.html"     class="mobile-link">Inicio</a></li>
+      <li><a href="nosotros.html"  class="mobile-link">Nosotros</a></li>
+      <li><a href="servicios.html" class="mobile-link">Servicios</a></li>
+      <li><a href="proyectos.html" class="mobile-link">Portafolio</a></li>
+      <li><a href="contacto.html"  class="mobile-link mobile-cta">Contáctenos</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero page-hero--img">
+      <div class="page-hero-bg">
+        <img src="images/service_montajes.jpg" alt="Portafolio de proyectos SUDECONS" class="page-hero-img" />
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="container page-hero-content">
+        <div class="section-label light" data-anim="fade-up">Nuestro trabajo</div>
+        <h1 class="page-hero-title" data-anim="fade-up" data-delay="100">Portafolio</h1>
+        <p class="page-hero-desc" data-anim="fade-up" data-delay="200">Proyectos ejecutados para el sector industrial privado en Colombia.</p>
+      </div>
+    </section>
+
+    <!-- ── PORTFOLIO SECTION ── -->
+    <section class="section portfolio-section">
+      <div class="container">
+
+        <!-- FILTER BUTTONS -->
+        <div class="portfolio-filters" data-anim="fade-up" id="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="concretos">Concretos Reforzado</button>
+          <button class="filter-btn" data-filter="hidraulicos">Hidráulicos y Sanitarios</button>
+          <button class="filter-btn" data-filter="mantenimiento">Mantenimiento</button>
+          <button class="filter-btn" data-filter="estructurales">Estructurales</button>
+          <button class="filter-btn" data-filter="pavimentos">Pavimentos y Geotecnia</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GRID DE PROYECTOS
+             ───────────────────────────────────────────────────────────────
+             CÓMO AGREGAR UN PROYECTO:
+             Copie el bloque <article class="project-card"> de abajo,
+             péguelo dentro del <div id="projects-grid"> y reemplace:
+               - data-category: una de las categorías del filtro
+               - src de la imagen: ruta a la foto del proyecto
+               - alt: descripción de la imagen
+               - .project-tag: tipo de servicio (texto visible)
+               - .project-title: nombre del proyecto
+               - .project-location: ciudad / empresa
+               - .project-desc: descripción breve (1-2 líneas)
+        ═══════════════════════════════════════════════════════════════ -->
+        <div class="projects-grid" id="projects-grid" data-anim="fade-up">
+
+          <!--
+          ╔══════════════════════════════════════════════════════════════╗
+          ║  PLANTILLA DE PROYECTO — copie y edite para agregar uno     ║
+          ╚══════════════════════════════════════════════════════════════╝
+
+          <article class="project-card" data-category="obras-civiles">
+            <div class="project-img-wrap">
+              <img src="images/NOMBRE_DE_IMAGEN.jpg" alt="Descripción del proyecto" class="project-img" loading="lazy" />
+              <div class="project-img-overlay">
+                <span class="project-view">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Obras Civiles</span>
+              <h3 class="project-title">Nombre del Proyecto</h3>
+              <p class="project-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Ciudad, Colombia
+              </p>
+              <p class="project-desc">Descripción breve del trabajo realizado. Mencione el alcance, materiales principales o lo más destacado.</p>
+            </div>
+          </article>
+
+          -->
+
+        </div>
+        <!-- FIN DEL GRID -->
+
+        <!-- EMPTY STATE (se oculta automáticamente cuando hay proyectos) -->
+        <div class="portfolio-empty" id="portfolio-empty">
+          <div class="empty-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <h3 class="empty-title">Portafolio en construcción</h3>
+          <p class="empty-desc">Próximamente encontrará aquí los proyectos ejecutados por SUDECONS. Mientras tanto, puede contactarnos para conocer nuestro trabajo.</p>
+          <a href="contacto.html" class="btn btn-primary">Contáctenos</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-section">
+      <div class="cta-bg">
+        <img src="images/hero_construction.jpg" alt="" class="cta-bg-img" loading="lazy" />
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container cta-content" data-anim="fade-up">
+        <div class="section-label light">¿Quiere hacer parte de nuestro portafolio?</div>
+        <h2 class="cta-title">Ejecutemos su proyecto<br />juntos.</h2>
+        <a href="contacto.html" class="btn btn-white">Solicitar propuesta</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="SUDECONS" class="site-logo">
+          </div>
+          <p class="footer-tagline">Materializamos proyectos de ingeniería y construcción para nuestros clientes y socios que depositan su confianza en nosotros.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Páginas</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html#concretos">Proyectos de Concretos Reforzado</a></li>
+            <li><a href="servicios.html#hidraulicos">Proyectos Hidráulicos y Sanitarios</a></li>
+            <li><a href="servicios.html#mantenimiento">Mantenimiento industriales</a></li>
+            <li><a href="servicios.html#estructurales">Proyectos estructurales</a></li>
+            <li><a href="servicios.html#pavimentos">Proyectos de pavimentos y Geotecnia Vial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contacto</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:gerencia@sudeconst.com">gerencia@sudeconst.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Cali · Cartagena · Barranquilla</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 SUDECONS. Todos los derechos reservados.</p>
+        <p class="footer-web">www.sudecons.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>

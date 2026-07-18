@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contáctenos — SUDECONS. Ingeniería civil e industrial en Colombia. Correo: gerencia@sudeconst.com" />
+  <title>Contacto — SUDECONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="contacto">
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar" class="navbar navbar--solid">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="SUDECONS" class="site-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"      class="nav-link"       data-nav="home">Inicio</a></li>
+        <li><a href="nosotros.html"   class="nav-link"       data-nav="nosotros">Nosotros</a></li>
+        <li><a href="servicios.html"  class="nav-link"       data-nav="servicios">Servicios</a></li>
+        <li><a href="proyectos.html"  class="nav-link"       data-nav="proyectos">Portafolio</a></li>
+        <li><a href="contacto.html"   class="nav-link nav-cta active" data-nav="contacto">Contáctenos</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="index.html"     class="mobile-link">Inicio</a></li>
+      <li><a href="nosotros.html"  class="mobile-link">Nosotros</a></li>
+      <li><a href="servicios.html" class="mobile-link">Servicios</a></li>
+      <li><a href="proyectos.html" class="mobile-link">Portafolio</a></li>
+      <li><a href="contacto.html"  class="mobile-link mobile-cta">Contáctenos</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero page-hero--dark">
+      <div class="container page-hero-content">
+        <div class="section-label light" data-anim="fade-up">Hablemos</div>
+        <h1 class="page-hero-title" data-anim="fade-up" data-delay="100">Contáctenos</h1>
+        <p class="page-hero-desc" data-anim="fade-up" data-delay="200">Cuéntenos sobre su proyecto y le enviaremos una propuesta técnica sin costo.</p>
+      </div>
+    </section>
+
+    <!-- ── CONTACT SECTION ── -->
+    <section class="section contact">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- INFO -->
+          <div class="contact-info" data-anim="fade-right">
+            <div class="section-label">Información de contacto</div>
+            <h2 class="section-title">Hablemos de su proyecto</h2>
+            <p class="contact-desc">Estamos listos para escuchar sus requerimientos y diseñar la solución técnica más adecuada para su empresa.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Correo Electrónico</span>
+                  <a href="mailto:gerencia@sudeconst.com" class="contact-value">gerencia@sudeconst.com</a>
+                </div>
+              </div>
+
+              
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Sector</span>
+                  <span class="contact-value">Ingeniería Civil · Colombia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="contact-form-wrap" data-anim="fade-left">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Su nombre" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="empresa" class="form-label">Empresa</label>
+                  <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nombre de la empresa" autocomplete="organization" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="correo@empresa.com" required autocomplete="email" />
+                </div>
+                <div class="form-group">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+57 300 000 0000" autocomplete="tel" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="servicio" class="form-label">Servicio requerido</label>
+                <select id="servicio" name="servicio" class="form-input form-select">
+                  <option value="">Seleccione un servicio</option>
+                  <option value="concretos">Proyectos de Concretos Reforzado</option>
+                  <option value="hidraulicos">Proyectos Hidráulicos y Sanitarios</option>
+                  <option value="mantenimiento">Mantenimiento industriales</option>
+                  <option value="estructurales">Proyectos estructurales</option>
+                  <option value="pavimentos">Proyectos de pavimentos y Geotecnia Vial</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="ciudad" class="form-label">Ciudad del proyecto</label>
+                <input type="text" id="ciudad" name="ciudad" class="form-input" placeholder="Ej: Cali, Cartagena, Barranquilla..." />
+              </div>
+              <div class="form-group">
+                <label for="mensaje" class="form-label">Descripción del proyecto</label>
+                <textarea id="mensaje" name="mensaje" class="form-input form-textarea" rows="4" placeholder="Cuéntenos sobre su proyecto, alcance y cualquier detalle relevante..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                <span class="btn-text">Enviar Solicitud</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </button>
+              <div class="form-success" id="form-success" aria-live="polite" hidden>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>¡Mensaje enviado! Nos pondremos en contacto a la brevedad.</span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="SUDECONS" class="site-logo">
+          </div>
+          <p class="footer-tagline">Materializamos proyectos de ingeniería y construcción para nuestros clientes y socios que depositan su confianza en nosotros.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Páginas</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html#concretos">Proyectos de Concretos Reforzado</a></li>
+            <li><a href="servicios.html#hidraulicos">Proyectos Hidráulicos y Sanitarios</a></li>
+            <li><a href="servicios.html#mantenimiento">Mantenimiento industriales</a></li>
+            <li><a href="servicios.html#estructurales">Proyectos estructurales</a></li>
+            <li><a href="servicios.html#pavimentos">Proyectos de pavimentos y Geotecnia Vial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contacto</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:gerencia@sudeconst.com">gerencia@sudeconst.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Cali · Cartagena · Barranquilla</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 SUDECONS. Todos los derechos reservados.</p>
+        <p class="footer-web">www.sudecons.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

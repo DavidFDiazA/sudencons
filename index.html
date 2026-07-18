@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SUDECONS — Ingeniería Civil y Servicios Industriales en Colombia. Obras civiles, mantenimiento industrial, montajes y señalización." />
+  <title>SUDECONS — Ingeniería para la Industria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="SUDECONS" class="site-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"      class="nav-link" data-nav="home">Inicio</a></li>
+        <li><a href="nosotros.html"   class="nav-link" data-nav="nosotros">Nosotros</a></li>
+        <li><a href="servicios.html"  class="nav-link" data-nav="servicios">Servicios</a></li>
+        <li><a href="proyectos.html"  class="nav-link" data-nav="proyectos">Portafolio</a></li>
+        <li><a href="contacto.html"   class="nav-link nav-cta" data-nav="contacto">Contáctenos</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="index.html"     class="mobile-link">Inicio</a></li>
+      <li><a href="nosotros.html"  class="mobile-link">Nosotros</a></li>
+      <li><a href="servicios.html" class="mobile-link">Servicios</a></li>
+      <li><a href="proyectos.html" class="mobile-link">Portafolio</a></li>
+      <li><a href="contacto.html"  class="mobile-link mobile-cta">Contáctenos</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="images/hero_construction.jpg" alt="Proyecto de construcción industrial SUDECONS" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <div class="hero-badge" data-anim="fade-up">
+          <span class="badge-dot"></span>
+          Ingeniería Civil · Colombia
+        </div>
+        <h1 class="hero-title" data-anim="fade-up" data-delay="100">
+          Construimos<br />
+          <span class="hero-title-accent">lo que la industria</span><br />
+          necesita.
+        </h1>
+        <p class="hero-desc" data-anim="fade-up" data-delay="200">
+          Materializamos proyectos de ingeniería y construcción para nuestros clientes y socios que depositan su confianza en nosotros. Calidad, seguridad y precisión en cada obra.
+        </p>
+        <div class="hero-actions" data-anim="fade-up" data-delay="300">
+          <a href="servicios.html" class="btn btn-primary">Ver Servicios</a>
+          <a href="contacto.html"  class="btn btn-outline">Hablemos de su proyecto</a>
+        </div>
+      </div>
+      <a href="nosotros.html" class="hero-scroll" aria-label="Siguiente sección">
+        <div class="scroll-indicator"><span></span></div>
+      </a>
+    </section>
+
+    <!-- ── INTRO STRIP ── -->
+    <section class="intro-strip section-subtle section">
+      <div class="container">
+        <div class="intro-grid" data-anim="fade-up">
+          <div class="intro-text">
+            <div class="section-label">Quiénes Somos</div>
+            <h2 class="section-title">¿Quiénes somos?</h2>
+            <p>Somos una empresa conformada por un grupo de profesionales en diferentes ramas de la ingeniería civil comprometidos en la materialización de los proyectos para nuestros grandes clientes y socios que depositan su confianza en nosotros.</p>
+            <a href="nosotros.html" class="btn btn-primary" style="margin-top:1.75rem;">Conocer más</a>
+          </div>
+          <div class="intro-values">
+            <div class="value-card">
+              <div class="value-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <strong>Seguridad</strong>
+              <span>Protocolos HSE en cada proyecto</span>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <strong>Calidad</strong>
+              <span>Materiales y procesos certificados</span>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <strong>Cumplimiento</strong>
+              <span>Entrega dentro del plazo acordado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES PREVIEW ── -->
+    <section class="services-preview section section-dark">
+      <div class="container">
+        <div class="section-header" data-anim="fade-up">
+          <div class="section-label light">Servicios</div>
+          <h2 class="section-title light">Soluciones integrales de ingeniería</h2>
+        </div>
+        <div class="services-preview-grid">
+          <a href="servicios.html#concretos" class="sp-card" data-anim="fade-up" data-delay="0">
+            <img src="images/service_obras_civiles.jpg" alt="Proyectos de Concretos Reforzado" class="sp-img" loading="lazy" />
+            <div class="sp-overlay">
+              <span class="sp-num">01</span>
+              <h3 class="sp-title">Proyectos de Concretos Reforzado</h3>
+              <p class="sp-arrow">Ver detalle →</p>
+            </div>
+          </a>
+          <a href="servicios.html#hidraulicos" class="sp-card" data-anim="fade-up" data-delay="100">
+            <img src="images/hero_construction.jpg" alt="Proyectos Hidráulicos y Sanitarios" class="sp-img" loading="lazy" />
+            <div class="sp-overlay">
+              <span class="sp-num">02</span>
+              <h3 class="sp-title">Proyectos Hidráulicos y Sanitarios</h3>
+              <p class="sp-arrow">Ver detalle →</p>
+            </div>
+          </a>
+          <a href="servicios.html#mantenimiento" class="sp-card" data-anim="fade-up" data-delay="200">
+            <img src="images/service_maintenance.jpg" alt="Mantenimiento industriales" class="sp-img" loading="lazy" />
+            <div class="sp-overlay">
+              <span class="sp-num">03</span>
+              <h3 class="sp-title">Mantenimiento industriales</h3>
+              <p class="sp-arrow">Ver detalle →</p>
+            </div>
+          </a>
+          <a href="servicios.html#estructurales" class="sp-card" data-anim="fade-up" data-delay="300">
+            <img src="images/service_montajes.jpg" alt="Proyectos estructurales" class="sp-img" loading="lazy" />
+            <div class="sp-overlay">
+              <span class="sp-num">04</span>
+              <h3 class="sp-title">Proyectos estructurales</h3>
+              <p class="sp-arrow">Ver detalle →</p>
+            </div>
+          </a>
+          <a href="servicios.html#pavimentos" class="sp-card" data-anim="fade-up" data-delay="400">
+            <img src="images/service_senalizacion.jpg" alt="Proyectos de pavimentos y Geotecnia Vial" class="sp-img" loading="lazy" />
+            <div class="sp-overlay">
+              <span class="sp-num">05</span>
+              <h3 class="sp-title">Proyectos de pavimentos y Geotecnia Vial</h3>
+              <p class="sp-arrow">Ver detalle →</p>
+            </div>
+          </a>
+        </div>
+        <div class="section-cta" data-anim="fade-up">
+          <a href="servicios.html" class="btn btn-outline">Ver todos los servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CLIENTS ── -->
+    <section class="clients-strip section">
+      <div class="container">
+        <div class="section-header" data-anim="fade-up">
+          <div class="section-label">Clientes</div>
+          <h2 class="section-title">Empresas que confían en nosotros</h2>
+          <p class="section-desc">Trabajamos con grandes clientes y socios que depositan su confianza en nosotros.</p>
+        </div>
+        <div class="clients-logos" data-anim="fade-up">
+          <div class="client-logo">
+            <div class="client-logo-inner"><img src="images/clientes/coca_cola.png" alt="Coca-Cola" class="client-logo-img" loading="lazy"></div>
+          </div>
+          <div class="client-logo">
+            <div class="client-logo-inner"><img src="images/clientes/bavaria.png" alt="Bavaria" class="client-logo-img" loading="lazy"></div>
+          </div>
+          <div class="client-logo">
+            <div class="client-logo-inner"><img src="images/clientes/olimpica.png" alt="Olímpica" class="client-logo-img" loading="lazy"></div>
+          </div>
+          <div class="client-logo">
+            <div class="client-logo-inner"><img src="images/clientes/valle_del_lili.png" alt="Fundación Valle del Lili" class="client-logo-img" loading="lazy"></div>
+          </div>
+          <div class="client-logo">
+            <div class="client-logo-inner"><img src="images/clientes/imbanaco.png" alt="Clínica Imbanaco" class="client-logo-img" loading="lazy"></div>
+          </div>
+          <div class="client-logo">
+            <div class="client-logo-inner"><img src="images/clientes/salamanca.png" alt="Salamanca" class="client-logo-img" loading="lazy"></div>
+          </div>
+          <div class="client-logo">
+            <div class="client-logo-inner"><img src="images/clientes/envases.png" alt="Envases" class="client-logo-img" loading="lazy"></div>
+          </div>
+          <div class="client-logo">
+            <div class="client-logo-inner"><img src="images/clientes/san_juan_betulia.png" alt="Alcaldía San Juan de Betulia" class="client-logo-img" loading="lazy"></div>
+          </div>
+          <div class="client-logo">
+            <div class="client-logo-inner"><img src="images/clientes/jagua_ibirico.png" alt="Alcaldía de la Jagua de Ibirico" class="client-logo-img" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-section">
+      <div class="cta-bg">
+        <img src="images/service_montajes.jpg" alt="" class="cta-bg-img" loading="lazy" />
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container cta-content" data-anim="fade-up">
+        <div class="section-label light">¿Tiene un proyecto?</div>
+        <h2 class="cta-title">Convirtamos su idea<br />en una realidad.</h2>
+        <p class="cta-desc">Cuéntenos sobre su proyecto y le enviaremos una propuesta técnica sin costo.</p>
+        <a href="contacto.html" class="btn btn-white">Solicitar Propuesta</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="SUDECONS" class="site-logo">
+          </div>
+          <p class="footer-tagline">Materializamos proyectos de ingeniería y construcción para nuestros clientes y socios que depositan su confianza en nosotros.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Páginas</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html#concretos">Proyectos de Concretos Reforzado</a></li>
+            <li><a href="servicios.html#hidraulicos">Proyectos Hidráulicos y Sanitarios</a></li>
+            <li><a href="servicios.html#mantenimiento">Mantenimiento industriales</a></li>
+            <li><a href="servicios.html#estructurales">Proyectos estructurales</a></li>
+            <li><a href="servicios.html#pavimentos">Proyectos de pavimentos y Geotecnia Vial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contacto</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:gerencia@sudeconst.com">gerencia@sudeconst.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Cali · Cartagena · Barranquilla</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 SUDECONS. Todos los derechos reservados.</p>
+        <p class="footer-web">www.sudecons.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conozca SUDECONS — empresa colombiana de ingeniería civil y servicios industriales." />
+  <title>Nosotros — SUDECONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="nosotros">
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar" class="navbar navbar--solid">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="SUDECONS" class="site-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"      class="nav-link"      data-nav="home">Inicio</a></li>
+        <li><a href="nosotros.html"   class="nav-link active" data-nav="nosotros">Nosotros</a></li>
+        <li><a href="servicios.html"  class="nav-link"      data-nav="servicios">Servicios</a></li>
+        <li><a href="proyectos.html"  class="nav-link"      data-nav="proyectos">Portafolio</a></li>
+        <li><a href="contacto.html"   class="nav-link nav-cta" data-nav="contacto">Contáctenos</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="index.html"     class="mobile-link">Inicio</a></li>
+      <li><a href="nosotros.html"  class="mobile-link">Nosotros</a></li>
+      <li><a href="servicios.html" class="mobile-link">Servicios</a></li>
+      <li><a href="proyectos.html" class="mobile-link">Portafolio</a></li>
+      <li><a href="contacto.html"  class="mobile-link mobile-cta">Contáctenos</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ── PAGE HERO ── -->
+
+    <section class="page-hero page-hero--img">
+      <div class="page-hero-bg">
+        <img src="images/service_obras_civiles.jpg" alt="SUDECONS equipo de trabajo" class="page-hero-img" />
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="container page-hero-content" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div class="section-label light" data-anim="fade-up">Quiénes Somos</div>
+        <h1 class="page-hero-title" data-anim="fade-up" data-delay="100">Nosotros</h1>
+        <p class="page-hero-desc" data-anim="fade-up" data-delay="200">Ingeniería civil comprometida con la materialización de cada proyecto.</p>
+      </div>
+    </section>
+
+    <!-- ── QUIÉNES SOMOS ── -->
+    <section class="section about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual" data-anim="fade-right">
+            <div class="about-img-wrap">
+              <img src="images/service_obras_civiles.jpg" alt="Equipo de trabajo SUDECONS" class="about-img" loading="lazy" />
+            </div>
+          </div>
+          <div class="about-content" data-anim="fade-left">
+            <div class="section-label">La empresa</div>
+            <h2 class="section-title">¿Quiénes somos?</h2>
+            <p class="about-lead">Somos una empresa conformada por un grupo de profesionales en diferentes ramas de la ingeniería civil comprometidos en la materialización de los proyectos para nuestros grandes clientes y socios que depositan su confianza en nosotros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MISIÓN & VISIÓN ── -->
+    <section class="section section-subtle mv-section">
+      <div class="container">
+        <div class="mv-grid">
+
+          <div class="mv-card" data-anim="fade-up" data-delay="0">
+            <div class="mv-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v4l3 3"/>
+              </svg>
+            </div>
+            <div class="mv-label">Nuestra Misión</div>
+            <p class="mv-text">En Sudecons, transformamos desafíos industriales en soluciones ingeniosas y duraderas, combinando precisión técnica con una visión audaz para cada proyecto.</p>
+          </div>
+
+          <div class="mv-card mv-card--accent" data-anim="fade-up" data-delay="150">
+            <div class="mv-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <div class="mv-label">Nuestra Visión</div>
+            <p class="mv-text">Aspiramos a ser referente en ingeniería civil, revolucionando el mercado con creatividad y tecnología, liderando el camino hacia un desarrollo sostenible y eficiente.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VALUES ── -->
+    <section class="section values-section">
+      <div class="container">
+        <div class="section-header" data-anim="fade-up">
+          <div class="section-label">Nuestros Valores</div>
+          <h2 class="section-title">Los principios que nos guían</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-full-card" data-anim="fade-up" data-delay="0">
+            <div class="vfc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Seguridad</h3>
+            <p>Implementamos protocolos HSE rigurosos en cada proyecto. La seguridad de nuestro equipo y de nuestros clientes es innegociable.</p>
+          </div>
+          <div class="value-full-card" data-anim="fade-up" data-delay="100">
+            <div class="vfc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Calidad</h3>
+            <p>Materiales y procesos certificados. Cada obra supervisada para garantizar las especificaciones acordadas y la normativa vigente.</p>
+          </div>
+          <div class="value-full-card" data-anim="fade-up" data-delay="200">
+            <div class="vfc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Cumplimiento</h3>
+            <p>Respetamos los plazos y presupuestos pactados. La confianza se construye con hechos, no con promesas.</p>
+          </div>
+          <div class="value-full-card" data-anim="fade-up" data-delay="300">
+            <div class="vfc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Profesionalismo</h3>
+            <p>Ingenieros, técnicos y operarios con certificaciones vigentes en trabajo seguro y en sus respectivas especialidades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ── CTA ── -->
+    <section class="cta-section">
+      <div class="cta-bg">
+        <img src="images/hero_construction.jpg" alt="" class="cta-bg-img" loading="lazy" />
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container cta-content" data-anim="fade-up">
+        <div class="section-label light">¿Listo para trabajar juntos?</div>
+        <h2 class="cta-title">Contáctenos y<br />estudiemos su proyecto.</h2>
+        <a href="contacto.html" class="btn btn-white">Ir a Contacto</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="SUDECONS" class="site-logo">
+          </div>
+          <p class="footer-tagline">Materializamos proyectos de ingeniería y construcción para nuestros clientes y socios que depositan su confianza en nosotros.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Páginas</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html#concretos">Proyectos de Concretos Reforzado</a></li>
+            <li><a href="servicios.html#hidraulicos">Proyectos Hidráulicos y Sanitarios</a></li>
+            <li><a href="servicios.html#mantenimiento">Mantenimiento industriales</a></li>
+            <li><a href="servicios.html#estructurales">Proyectos estructurales</a></li>
+            <li><a href="servicios.html#pavimentos">Proyectos de pavimentos y Geotecnia Vial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contacto</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:gerencia@sudeconst.com">gerencia@sudeconst.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Cali · Cartagena · Barranquilla</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 SUDECONS. Todos los derechos reservados.</p>
+        <p class="footer-web">www.sudecons.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
